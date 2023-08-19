@@ -9,7 +9,8 @@
 
 html {
     scroll-behavior: smooth;
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,10 +19,11 @@ body {
 
 .header {
     position: fixed;
+    height: 70px;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 7%;
+    padding: 1.6rem 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +47,7 @@ body {
 }
 
 .navbar a {
-    font-size: 1.15rem;
+    font-size: 1.8rem;
     color: #000;
     text-decoration: none;
     font-weight: 500;
@@ -68,6 +70,9 @@ body {
 @media (max-width: 992px) {
     .header {
         padding: 1.3rem 5%;
+    }
+    .hero-section{
+        margin-top: 100px;
     }
 }
 
@@ -94,7 +99,7 @@ body {
 
     .navbar a {
         display: block;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         margin: 1.5rem 0;
         text-align: center;
     }
@@ -103,44 +108,56 @@ body {
 /* HERO SECTION */
 
 .hero-section {
-    background-color: #010125;
-    width: 100%;
+    background-color: #000;
 }
 
 .hero-row {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 8rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content{
+    flex: 1 1 42rem;
+}
+
+.hero-img{
+    flex: 1 1 42rem;
 }
 
 .hero-title {
-    font-size: 3rem;
-    color: #FFF;
+    font-size: 4.5rem;
+    color: #fff;
     margin-bottom: 3rem;
-    width: 500px;
 }
 
 .hero-description {
-    font-size: 1.5rem;
-    color: #FFF;
-    margin-bottom: 3rem;
-    width: 500px;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 6rem;
 }
 
 .hero-btn{
     text-decoration: none;
-    padding: .8rem 1.6rem;
-    background-color: aqua;
+    padding: 1.3rem 2rem;
+    background-color: #fff;
+    color: #000;
     border: none;
     border-radius: 10px;
+    font-size: 1.6rem;
+}
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
 }
 
-@media (max-width: 768px) {
-    .hero-img, .hero-content{
-        max-width: 80%;
+@media (max-width: 450px) {
+    html{
+        font-size: 45%;
     }
 }
