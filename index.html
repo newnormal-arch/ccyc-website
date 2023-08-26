@@ -3,69 +3,296 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCYC | Empowering Youth In Chiawelo</title>
+
+    <!-- 
+      - favicon
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 
+      - google font link
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>CCYC</title>
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./images/hero-img.png">
+
 </head>
 
 <body>
-    <header class="header">
-        <a href="" class="nav-logo"><img src="./img/logo_icon_bg.png" alt=""></a>
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="container">
 
-        <label for="" class="icons">
-            <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
+            <a href="#" class="logo"><img src="./images/logo_icon_bg.png" alt=""></a>
 
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Programs</a>
-            <a href="#">Events</a>
-            <a href="#">Contact Us</a>
-        </nav>
+            <nav class="navbar" data-navbar>
+
+                <div class="wrapper">
+                    <a href="#" class="logo"><img src="./images/logo_icon_bg.png" alt=""></a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+
+                    <!-- <li>
+                <a href="#features" class="navbar-link" data-nav-link>Features</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+              </li> -->
+
+                </ul>
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-outline">Contact Us</a>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="hero-row">
-            <div class="hero-content">
-                <h2 class="hero-title">CCYC: Empowering youth in Chiawelo</h2>
-                <p class="hero-description">We are a community development organization that provides youth with opportunities to learn, grow, and make a difference in their community.</p>
-                <a href="#" class="hero-btn">Learn More</a>
-            </div>
-            <div class="hero-img">
-                <img src="./img/official_logo.jpg" alt="">
-            </div>
-        </div>
-    </section>
+    <main>
+        <article>
+            <!-- HERO SECTION -->
+            <section class="section hero" id="home" aria-label="hero">
+                <div class="container">
 
-    <!-- ABOUT US SECTION -->
-    <section class="about-us">
-        <div class="about-content">
-            <h2 class="about-title">About our organization</h2>
-            <h3 class="about-subtitle">We are on a mission to empower</h3>
-            <p class="about-description">CCYC is committed to creating a brighter future for youth in Chiawelo. We believe that all young people deserve the opportunity to reach their full potential, regardless of their circumstances. That's why we offer a wide range of programs and services that help youth develop their skills, build their confidence, and make a positive impact on their community.</p>
-            <ul class="program-list">
-                <h2 class="programme-title">Some of our programs include:</h2>
-                <li class="program-list-item">After-school tutoring and enrichment programs</li>
-                <li class="program-list-item">Leadership development training</li>
-                <li class="program-list-item">Job training and placement services</li>
-                <li class="program-list-item">Mentorship programs</li>
-                <li class="program-list-item">Community service opportunities</li>
+                    <div class="hero-content">
+
+                        <p class="hero-subtitle has-before">Welcome to Chiawelo Consortium Youth Club</p>
+
+                        <h1 class="h1 hero-title">Empowering The Youth</h1>
+
+                        <p class="hero-text">
+                            We are a community development organization that provides opportunities for young people to
+                            learn, grow, and make a difference in their community.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary">Discover More</a>
+
+                            <!-- <button class="flex-btn">
+                    <div class="btn-icon">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </div>
+    
+                    <span class="span">How it works</span>
+                  </button> -->
+                        </div>
+
+                    </div>
+
+                    <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
+                        <img src="./images/hero-img.png" width="650" height="650" alt="hero banner"
+                            class="img-cover">
+                    </figure>
+
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+
+        <div class="footer-top section">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo"><img src="./images/logo_icon_bg.png" alt=""></a>
+    
+              <p class="footer-text">
+                We are a community development organization that provides opportunities for young people to learn, grow, and make a difference in their community.
+              </p>
+    
+              <form action="" class="newsletter-form">
+                <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+    
+                <button type="submit" class="form-btn">
+                  <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Our Services</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Early Childhood Development</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Youth Development</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">SMME Support</a>
+              </li>    
             </ul>
-            <p class="about-description">We believe that every young person has something to offer their community. We are here to help them discover their talents and make a difference in the world.</p>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About Company</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Our Services</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="location" aria-hidden="true"></ion-icon>
+    
+                <address class="contact-link address">
+                  Chiawelo, Soweto
+                </address>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+    
+                <a href="tel:+27123456789" class="contact-link">+27 12 345 6789</a>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+    
+                <a href="mailto:info@ccyc.co.za" class="contact-link">info@ccyc.co.za</a>
+              </li>
+    
+              <li class="footer-item">
+                <ul class="social-list">
+    
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                  </li>
+    
+                </ul>
+              </li>
+    
+            </ul>
+    
+          </div>
         </div>
-    </section>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2023 CCYC | All Rights Reserved by <a href="#" class="copyright-link">Chiawelo Consortium Youth Club</a>
+            </p>
+    
+            <ul class="footer-bottom-list">
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Terms of Use</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      </footer>
 
-    <script src="./js/main.js"></script>
+        <!-- 
+    - custom js link
+  -->
+  <script src="./js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
