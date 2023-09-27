@@ -454,6 +454,10 @@ body {
   gap: 30px;
 }
 
+.about-content{
+  margin-top: 50px;
+}
+
 .about-banner { filter: drop-shadow(2px 2px 5px hsla(0, 0%, 0%, 0.08)); }
 
 .about .section-text { margin-block: 20px 13px; }
