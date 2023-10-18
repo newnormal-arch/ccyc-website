@@ -19,7 +19,7 @@
       - custom css link
     -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   <!-- 
       - google font link
@@ -41,9 +41,7 @@
   <!-- HEADER -->
   <header class="header" data-header>
     <div class="container">
-
       <a href="#" class="logo"><img src="./images/logo_icon_bg.png" alt=""></a>
-
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
@@ -67,19 +65,6 @@
           <li>
             <a href="#services" class="navbar-link" data-nav-link>Services</a>
           </li>
-
-          <!-- <li>
-                <a href="#features" class="navbar-link" data-nav-link>Features</a>
-              </li>
-    
-              <li>
-                <a href="#" class="navbar-link" data-nav-link>Blog</a>
-              </li>
-    
-              <li>
-                <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-              </li> -->
-
         </ul>
 
       </nav>
@@ -113,7 +98,7 @@
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Discover More</a>
+              <a href="#about" class="btn btn-primary">Discover More</a>
 
               <!-- <button class="flex-btn">
                     <div class="btn-icon">
@@ -191,7 +176,7 @@
 
           <p class="section-subtitle text-center">-What We Offer-</p>
 
-          <h2 class="h2 section-title text-center">Our Creative Services</h2>
+          <h2 class="h2 section-title text-center" id="youth">Our Creative Services</h2>
 
           <p class="section-text">
             Our purpose is to bring our community together and tackle our issues with programs, and activities in the
@@ -205,8 +190,8 @@
             <li>
               <div class="service-card has-after">
                 <figure class="card-icon">
-                  <img src="./images/service-1.png" width="140" height="140" loading="lazy"
-                    alt="UI/UX Creative Design" class="img">
+                  <img src="./images/service-1.png" width="140" height="140" loading="lazy" alt="UI/UX Creative Design"
+                    class="img">
                 </figure>
                 <div class="card-content">
                   <h3 class="h3 card-title">Early Childhood Development:</h3>
@@ -268,7 +253,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
 
         </div>
       </section>
@@ -276,44 +261,44 @@
       <!-- CONTACT SECTION -->
       <div class="contact-container" id="contact">
         <main class="row">
-          
+
           <!--  *******   Left Section (Column) Starts   *******  -->
-    
+
           <section class="col left">
-            
+
             <!--  *******   Title Starts   *******  -->
-    
+
             <div class="contactTitle">
               <h2>Get In Touch</h2>
               <p>Contact us to get to know more of the work that we do in our community.</p>
             </div>
-    
+
             <!--  *******   Title Ends   *******  -->
-    
+
             <!--  *******   Contact Info Starts   *******  -->
-    
+
             <div class="contactInfo">
-              
+
               <div class="iconGroup">
                 <div class="icon">
                   <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="details">
                   <span>Phone</span>
-                  <span>+27 78 111 0000</span>
+                  <a href="tel:+27679996145" target="_blank">+27 67 999 6145</a>
                 </div>
               </div>
-    
+
               <div class="iconGroup">
                 <div class="icon">
                   <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="details">
                   <span>Email</span>
-                  <span>info@ccycgroup.co.za</span>
+                  <a href="mailto:info@ccycgroup.org" target="_blank">info@ccycgroup.org</a>
                 </div>
               </div>
-    
+
               <div class="iconGroup">
                 <div class="icon">
                   <i class="fa-solid fa-location-dot"></i>
@@ -323,65 +308,65 @@
                   <span>Chiawelo, Johannesburg, South Africa</span>
                 </div>
               </div>
-    
+
             </div>
-    
+
             <!--  *******   Contact Info Ends   *******  -->
-    
+
             <!--  *******   Social Media Starts   *******  -->
-    
+
             <div class="socialMedia">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <!-- <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> -->
+              <a href="https://www.facebook.com/profile.php?id=61552008300510&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.tiktok.com/@bontle.ba.lefatsh?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://instagram.com/thec.onsortium?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.link/z2ejif"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-    
+
             <!--  *******   Social Media Ends   *******  -->
-    
+
           </section>
-    
+
           <!--  *******   Left Section (Column) Ends   *******  -->
-    
+
           <!--  *******   Right Section (Column) Starts   *******  -->
-    
+
           <section class="col right">
-            
+
             <!--  *******   Form Starts   *******  -->
-    
-            <form class="messageForm">
-              
+
+            <form class="messageForm" id="contact-form" action="https://formspree.io/f/mjvqjqyy" method="POST">
+
               <div class="inputGroup halfWidth">
-                <input type="text" name="" required="required">
+                <input type="text" name="name" required="required">
                 <label>Your Name</label>
               </div>
-    
+
               <div class="inputGroup halfWidth">
-                <input type="email" name="" required="required">
+                <input type="email" name="email" required="required">
                 <label>Email</label>
               </div>
-    
+
               <div class="inputGroup fullWidth">
-                <input type="text" name="" required="required">
+                <input type="text" name="subject" required="required">
                 <label>Subject</label>
               </div>
-    
+
               <div class="inputGroup fullWidth">
-                <textarea required="required"></textarea>
+                <textarea required="required" name="message"></textarea>
                 <label>Say Something</label>
               </div>
-    
+
               <div class="inputGroup fullWidth">
-                <button>Send Message</button>
+                <button type="submit">Send Message</button>
               </div>
-    
+
             </form>
-    
+
             <!--  *******   Form Ends   *******  -->
           </section>
-    
+
           <!--  *******   Right Section (Column) Ends   *******  -->
-    
+
         </main>
       </div>
 
@@ -403,13 +388,13 @@
             make a difference in their community.
           </p>
 
-          <form action="" class="newsletter-form">
+          <!-- <form action="" class="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
 
             <button type="submit" class="form-btn">
               <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
             </button>
-          </form>
+          </form> -->
 
         </div>
 
@@ -420,19 +405,19 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Early Childhood Development</a>
+            <a href="#youth" class="footer-link">Early Childhood Development</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Youth Development</a>
+            <a href="#youth" class="footer-link">Youth Development</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">SMME Support</a>
+            <a href="#youth" class="footer-link">SMME Support</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Arts & Culture</a>
+            <a href="#youth" class="footer-link">Arts & Culture</a>
           </li>
         </ul>
 
@@ -443,15 +428,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Company</a>
+            <a href="#about" class="footer-link">About Company</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Our Services</a>
+            <a href="#services" class="footer-link">Our Services</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
           </li>
 
         </ul>
@@ -473,39 +458,39 @@
           <li class="footer-item">
             <ion-icon name="call" aria-hidden="true"></ion-icon>
 
-            <a href="tel:+27123456789" class="contact-link">+27 12 345 6789</a>
+            <a href="tel:+27679996145" class="contact-link">+27 67 999 6145</a>
           </li>
 
           <li class="footer-item">
             <ion-icon name="mail" aria-hidden="true"></ion-icon>
 
-            <a href="mailto:info@ccyc.co.za" class="contact-link">info@ccyc.co.za</a>
+            <a href="mailto:info@ccycgroup.org" class="contact-link">info@ccycgroup.org</a>
           </li>
 
           <li class="footer-item">
             <ul class="social-list">
 
               <li>
-                <a href="#" class="social-link">
+                <a href="https://www.facebook.com/profile.php?id=61552008300510&mibextid=ZbWKwL" class="social-link">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                <a href="https://www.tiktok.com/@bontle.ba.lefatsh?lang=en" class="social-link">
+                  <ion-icon name="logo-tiktok"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <a href="#" class="social-link">
+                <a href="https://instagram.com/thec.onsortium?igshid=NTc4MTIwNjQ2YQ==" class="social-link">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
+                <a href="https://wa.link/z2ejif" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
 

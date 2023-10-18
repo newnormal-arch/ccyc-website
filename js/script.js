@@ -70,3 +70,13 @@ const accordionAction = document.querySelectorAll("[data-accordion-action]");
 const toggleAccordion = function () { this.classList.toggle("active"); }
 
 addEventOnElem(accordionAction, "click", toggleAccordion);
+
+/*
+ * CLEAR CONTACT FORM AFTER SUBMISSION
+ */
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
